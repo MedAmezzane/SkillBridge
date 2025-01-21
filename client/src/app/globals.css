@@ -103,6 +103,22 @@ input[type="color"] {
   @apply bg-customgreys-primarybg;
 }
 
+/* Filepond */
+.filepond--panel-root {
+  @apply !bg-customgreys-primarybg;
+}
+
+.filepond--drop-label.filepond--drop-label label {
+  @apply cursor-pointer;
+}
+
+.filepond--drop-label {
+  @apply !text-white-50;
+  @apply cursor-pointer;
+  @apply hover:!bg-customgreys-darkerGrey;
+  @apply hover:!text-white-100;
+}
+
 /* Component Classes */
 
 /* Search Page */
@@ -386,6 +402,43 @@ input[type="color"] {
   @apply text-sm font-medium text-primary-700;
 }
 
+/* Navbar */
+.navbar {
+  @apply w-full mb-6 px-4 sm:px-8 pt-7 z-10;
+}
+
+.navbar__container {
+  @apply flex justify-between items-center w-full my-3;
+}
+
+.navbar__search {
+  @apply flex justify-between items-center gap-2 sm:gap-5;
+}
+
+.navbar__search-input {
+  @apply bg-customgreys-primarybg pl-10 sm:pl-14 pr-6 sm:pr-20 py-3 sm:py-4 rounded-xl text-customgreys-dirtyGrey hover:text-white-50 hover:bg-customgreys-darkerGrey transition-all duration-300 text-sm sm:text-base;
+}
+
+.navbar__search-icon {
+  @apply absolute left-3 sm:left-5 top-1/2 transform -translate-y-1/2 text-customgreys-dirtyGrey transition-all duration-300;
+}
+
+.navbar__actions {
+  @apply flex items-center gap-3 sm:gap-6;
+}
+
+.navbar__dark-mode-button {
+  @apply rounded-full flex items-center justify-center;
+}
+
+.navbar__dark-mode-icon {
+  @apply cursor-pointer text-customgreys-dirtyGrey w-5 h-5 sm:w-6 sm:h-6 hover:text-white-50;
+}
+
+.navbar__sidebar-trigger {
+  @apply text-customgreys-dirtyGrey hover:text-white-50 transition-colors;
+}
+
 /* NonDashboard Navbar */
 .nondashboard-navbar {
   @apply w-full flex justify-center bg-customgreys-primarybg;
@@ -446,6 +499,23 @@ input[type="color"] {
   @apply bg-customgreys-darkerGrey text-white-50;
 }
 
+/* Shared Notification Settings */
+.notification-settings {
+  @apply space-y-4;
+}
+
+.notification-settings__form {
+  @apply space-y-4;
+}
+
+.notification-settings__fields {
+  @apply space-y-6;
+}
+
+.notification-settings__submit {
+  @apply !mt-8 text-gray-100 bg-primary-700 hover:bg-primary-600;
+}
+
 /* Header */
 .header {
   @apply mb-7 flex justify-between items-center;
@@ -483,6 +553,35 @@ input[type="color"] {
 /* Dark Mode Button */
 .dark-mode-button {
   @apply cursor-pointer text-customgreys-dirtyGrey w-5 h-5 sm:w-6 sm:h-6 hover:text-white-50;
+}
+
+/* Course Card Search Additional Classes */
+.course-card-search__content {
+  @apply p-4 flex flex-col justify-between flex-grow;
+}
+
+.course-card-search__title {
+  @apply font-semibold line-clamp-1;
+}
+
+.course-card-search__description {
+  @apply text-sm mt-1 line-clamp-2;
+}
+
+.course-card-search__teacher {
+  @apply text-customgreys-dirtyGrey text-sm;
+}
+
+.course-card-search__footer {
+  @apply flex justify-between items-center mt-1;
+}
+
+.course-card-search__price {
+  @apply text-primary-500 font-semibold;
+}
+
+.course-card-search__enrollment {
+  @apply text-customgreys-dirtyGrey text-sm;
 }
 
 /* Additional Navbar Classes */
@@ -564,11 +663,6 @@ input[type="color"] {
 /* Root Layout */
 .root-layout {
   @apply mx-auto w-full h-full justify-center items-center;
-}
-
-/* Add this class for group hover effect */
-.group .course-card-search__image {
-  @apply hover:scale-105 w-auto;
 }
 
 /* Add these classes for group hover effects */
