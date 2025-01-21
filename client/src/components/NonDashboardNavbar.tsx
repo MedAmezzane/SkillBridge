@@ -46,7 +46,7 @@ const NonDashboardNavbar = () => {
               appearance={{
                 baseTheme: dark,
                 elements: {
-                  userButtonPopoverMain:"bg-customgreys-secondarybg",
+                  userButtonPopoverMain:"bg-customgreys-darkerGrey",
                   userButtonOuterIdentifier: "text-customgreys-dirtyGrey",
                   userButtonBox: "scale-90 sm:scale-100",
                   userButtonPopoverFooter: "hidden",
