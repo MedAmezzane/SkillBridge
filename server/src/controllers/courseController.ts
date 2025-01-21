@@ -17,10 +17,7 @@ export const listCourses = async (
   }
 };
 
-export const getCourse = async (
-    req: Request, 
-    res: Response
-): Promise<void> => {
+export const getCourse = async (req: Request, res: Response): Promise<void> => {
   const { courseId } = req.params;
   try {
     const course = await Course.get(courseId);
