@@ -8,7 +8,7 @@ function Skeleton({
     <div
       className={cn(
         "animate-pulse rounded-md bg-primary/10",
-        "bg-gray-700",
+        "bg-customgreys-darkerGrey",
         className
       )}
       {...props}

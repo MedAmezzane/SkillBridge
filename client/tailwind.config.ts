@@ -53,50 +53,52 @@ const config = {
   				ring: 'hsl(var(--sidebar-ring))'
   			},
   			customgreys: {
-  				primarybg: '#1B1C22',
-  				secondarybg: '#25262F',
-  				darkGrey: '#17181D',
-  				darkerGrey: '#3d3d3d',
-  				dirtyGrey: '#6e6e6e'
-  			},
-  			primary: {
-  				'50': '#fdfdff',
-  				'100': '#f7f7ff',
-  				'200': '#ececff',
-  				'300': '#ddddfe',
-  				'400': '#cacafe',
-  				'500': '#b3b3fd',
-  				'600': '#9898fd',
-  				'700': '#7878fc',
-  				'750': '#5a5be6',
-  				'800': '#0404be',
-  				'900': '#020255',
-  				'950': '#010132',
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			secondary: {
-  				'50': '#fcfefe',
-  				'100': '#f3fbfa',
-  				'200': '#e5f7f4',
-  				'300': '#d0f1ec',
-  				'400': '#b6e9e1',
-  				'500': '#96dfd4',
-  				'600': '#70d3c4',
-  				'700': '#44c5b2',
-  				'800': '#227064',
-  				'900': '#123933',
-  				'950': '#0c2723',
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			},
-  			white: {
-  				'50': '#d2d2d2',
-  				'100': '#ffffff'
-  			},
-  			tertiary: {
-  				'50': '#E9B306'
-  			},
+				primarybg: "#1A1716",    // Deep chocolate background
+				secondarybg: "#262220",  // Lighter chocolate
+				darkGrey: "#141211",     // Darker brown
+				darkerGrey: "#343130",   // Mid-tone brown
+				dirtyGrey: "#8C8179",    // Warm grey
+			  },
+			  primary: {
+				"50": "#FDF8F6",
+				"100": "#F8EBE6",
+				"200": "#F0D6CC",
+				"300": "#E8B8A8",
+				"400": "#DFA08B",
+				"500": "#D27B5C",        // Warm terracotta
+				"600": "#BA5A39",
+				"700": "#9B442A",
+				"750": "#833B24",
+				"800": "#6B311E",
+				"900": "#522616",
+				"950": "#3A1B10",
+				DEFAULT: "hsl(var(--primary))",
+				foreground: "hsl(var(--primary-foreground))",
+			  },
+			  secondary: {
+				"50": "#FDFCFB",
+				"100": "#F5E6D8",
+				"200": "#EBCCB0",
+				"300": "#E0B38A",
+				"400": "#D69963",
+				"500": "#C17F3E",        // Rich caramel
+				"600": "#A66831",
+				"700": "#8B5526",
+				"800": "#6F441E",
+				"900": "#543318",
+				"950": "#392211",
+				DEFAULT: "hsl(var(--secondary))",
+				foreground: "hsl(var(--secondary-foreground))",
+			  },
+			  white: {
+				"50": "#F6F3F1",         // Warm white
+				"100": "#FFFFFF",        // Pure white
+			  },
+			  tertiary: {
+				"50": "#E9B06C",         // Golden accent
+				"100": "#92400E",        // Deep amber
+				"200": "#FF6B6B",        // Coral for alerts
+			  },
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',

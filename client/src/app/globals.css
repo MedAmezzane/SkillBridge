@@ -498,6 +498,15 @@ input[type="color"] {
   @apply flex flex-grow w-full h-full justify-center items-center;
 }
 
+/* Auth Layout */
+.auth-layout {
+  @apply h-full w-full bg-customgreys-primarybg;
+}
+
+.auth-layout__main {
+  @apply w-full flex h-full justify-center items-center;
+}
+
 /* Root Layout */
 .root-layout {
   @apply mx-auto w-full h-full justify-center items-center;

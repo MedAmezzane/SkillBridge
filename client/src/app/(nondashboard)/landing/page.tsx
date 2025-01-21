@@ -53,7 +53,6 @@ const Landing = () => {
       scroll: false,
     });
   };
-  console.log("courses:", courses);
 
   if (isLoading) return <LoadingSkeleton />;
 
