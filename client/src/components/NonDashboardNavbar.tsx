@@ -12,7 +12,10 @@ const NonDashboardNavbar = () => {
           </Link>
           <div className="flex items-center gap-4">
             <div className="relative group">
-              <Link href="/search" className="nondashboard-navbar__search-input">
+              <Link
+                href="/search"
+                className="nondashboard-navbar__search-input"
+              >
                 <span className="hidden sm:inline">Search Courses</span>
                 <span className="sm:hidden">Search</span>
               </Link>
@@ -23,14 +26,14 @@ const NonDashboardNavbar = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="nondashboard-navbar__actions">
-        <button className="nondashboard-navbar__notification-button">
-          <span className="nondashboard-navbar__notification-indicator"></span>
-          <Bell className="nondashboard-navbar__notification-icon" />
-        </button>
+        <div className="nondashboard-navbar__actions">
+          <button className="nondashboard-navbar__notification-button">
+            <span className="nondashboard-navbar__notification-indicator"></span>
+            <Bell className="nondashboard-navbar__notification-icon" />
+          </button>
 
-        {/* SIGN IN BUTTONS */}
+          {/* SIGN IN BUTTONS */}
+        </div>
       </div>
     </nav>
   );
