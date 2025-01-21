@@ -5,14 +5,13 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 import * as dynamoose from "dynamoose";
-import { createClerkClient } from "@clerk/express";
+import { clerkMiddleware, createClerkClient, requireAuth } from "@clerk/express";
 /* ROUTE IMPORTS */
 import courseRoutes from "./routes/courseRoutes";
 import userClerkRoutes from "./routes/userClerkRoutes";
 
 /* CONFIGURATIONS */
 dotenv.config();
-
 const isProduction = process.env.NODE_ENV === "production";
 if (!isProduction) {
   dynamoose.aws.ddb.local();
@@ -30,6 +29,7 @@ app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
+app.use(clerkMiddleware());
 
 /* ROUTES */
 app.get("/", (req, res) => {
@@ -37,7 +37,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/courses", courseRoutes);
-app.use("/users/clerk", userClerkRoutes);
+app.use("/users/clerk", requireAuth(), userClerkRoutes);
 
 /* SERVER */
 const port = process.env.PORT || 3000;
