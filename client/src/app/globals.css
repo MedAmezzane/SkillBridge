@@ -101,6 +101,72 @@ input[type="color"] {
 
 /* Component Classes */
 
+/* Search Page */
+.search {
+  @apply flex flex-col bg-background text-foreground h-full mx-auto w-3/4;
+}
+
+.search__title {
+  @apply font-normal text-2xl mt-14;
+}
+
+.search__subtitle {
+  @apply text-gray-500 mb-3;
+}
+
+.search__content {
+  @apply w-full flex flex-col-reverse md:flex-row pb-8 pt-2 gap-8;
+}
+
+.search__courses-grid {
+  @apply basis-3/5 grid grid-cols-1 xl:grid-cols-2 gap-6 auto-rows-fr;
+}
+
+.search__selected-course {
+  @apply basis-2/5 min-w-[350px] h-fit border-2 border-primary-600 bg-customgreys-secondarybg overflow-hidden rounded-lg;
+}
+
+/* Selected Course Component */
+.selected-course {
+  @apply overflow-hidden py-9 px-9;
+}
+
+.selected-course__title {
+  @apply text-white-50 font-semibold text-3xl;
+}
+
+.selected-course__author {
+  @apply text-gray-400 text-sm pt-3;
+}
+
+.selected-course__enrollment-count {
+  @apply font-bold text-gray-300;
+}
+
+.selected-course__content {
+  @apply mt-5;
+}
+
+.selected-course__description {
+  @apply text-gray-500 mb-4;
+}
+
+.selected-course__sections {
+  @apply mt-6;
+}
+
+.selected-course__sections-title {
+  @apply text-white-50/90 font-semibold mb-2;
+}
+
+.selected-course__footer {
+  @apply flex justify-between items-center mt-5;
+}
+
+.selected-course__price {
+  @apply text-primary-500 font-semibold text-2xl;
+}
+
 /* Landing Page */
 .landing {
   @apply w-3/4;
@@ -227,6 +293,27 @@ input[type="color"] {
   @apply h-[300px] rounded-lg;
 }
 
+/* Accordion Sections */
+.accordion-section {
+  @apply border-x border-b border-gray-600 overflow-hidden first:border-t first:rounded-t-lg last:rounded-b-lg;
+}
+
+.accordion-section__trigger {
+  @apply hover:bg-gray-700/50 bg-customgreys-primarybg/50 px-4 py-3;
+}
+
+.accordion-section__title {
+  @apply text-gray-400 font-medium;
+}
+
+.accordion-section__content {
+  @apply bg-customgreys-secondarybg/50 px-4 py-4;
+}
+
+.accordion-section__chapter {
+  @apply flex items-center text-gray-400/90 py-1;
+}
+
 /* Course Card Search */
 .course-card-search {
   @apply bg-customgreys-secondarybg overflow-hidden rounded-lg hover:bg-white-100/10 transition duration-200 flex flex-col cursor-pointer border-2 h-full;
@@ -259,6 +346,19 @@ input[type="color"] {
 
 .footer__link {
   @apply text-primary-500 mx-2;
+}
+
+/* Loading */
+.loading {
+  @apply fixed inset-0 flex gap-2 items-center justify-center bg-background/50;
+}
+
+.loading__spinner {
+  @apply w-6 h-6 animate-spin text-primary-700;
+}
+
+.loading__text {
+  @apply text-sm font-medium text-primary-700;
 }
 
 /* NonDashboard Navbar */
@@ -321,23 +421,6 @@ input[type="color"] {
   @apply bg-customgreys-darkerGrey text-white-50;
 }
 
-/* Shared Notification Settings */
-.notification-settings {
-  @apply space-y-4;
-}
-
-.notification-settings__form {
-  @apply space-y-4;
-}
-
-.notification-settings__fields {
-  @apply space-y-6;
-}
-
-.notification-settings__submit {
-  @apply !mt-8 text-gray-100 bg-primary-700 hover:bg-primary-600;
-}
-
 /* Header */
 .header {
   @apply mb-7 flex justify-between items-center;
@@ -370,6 +453,11 @@ input[type="color"] {
 
 .navbar__search-icon {
   @apply absolute left-3 sm:left-5 top-1/2 transform -translate-y-1/2 text-customgreys-dirtyGrey transition-all duration-300;
+}
+
+/* Dark Mode Button */
+.dark-mode-button {
+  @apply cursor-pointer text-customgreys-dirtyGrey w-5 h-5 sm:w-6 sm:h-6 hover:text-white-50;
 }
 
 /* Course Card Search Additional Classes */
@@ -413,4 +501,9 @@ input[type="color"] {
 /* Root Layout */
 .root-layout {
   @apply mx-auto w-full h-full justify-center items-center;
+}
+
+/* Add this class for group hover effect */
+.group .course-card-search__image {
+  @apply hover:scale-105 w-auto;
 }
