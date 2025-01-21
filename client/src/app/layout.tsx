@@ -4,9 +4,9 @@ import "./globals.css";
 import Providres from "./providers";
 
 const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {
@@ -21,9 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${dmSans.className}`}>
-          <Providres>{children}</Providres>
+      <body className={`${dmSans.className}`}>
+        <Providres>{children}</Providres>
       </body>
     </html>
   );

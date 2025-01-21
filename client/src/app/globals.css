@@ -371,3 +371,12 @@ input[type="color"] {
 .navbar__search-icon {
   @apply absolute left-3 sm:left-5 top-1/2 transform -translate-y-1/2 text-customgreys-dirtyGrey transition-all duration-300;
 }
+
+/* NonDashboard Layout */
+.nondashboard-layout {
+  @apply flex flex-col min-h-screen w-full;
+}
+
+.nondashboard-layout__main {
+  @apply flex flex-grow w-full h-full justify-center items-center;
+}
