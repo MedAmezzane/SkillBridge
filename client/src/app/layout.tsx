@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import Providres from "./providers";
+import Providers from "./providers";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
+import { Suspense } from "react";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -25,10 +26,12 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={`${dmSans.className}`}>
-          <Providres>
-            <div className="root-layout">{children}</div>
+          <Providers>
+            <Suspense fallback={null}>
+              <div className="root-layout">{children}</div>
+            </Suspense>
             <Toaster richColors closeButton />
-          </Providres>
+          </Providers>
         </body>
       </html>
     </ClerkProvider>
