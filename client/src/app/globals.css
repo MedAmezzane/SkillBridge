@@ -547,6 +547,19 @@ input[type="color"] {
   @apply px-8 py-4;
 }
 
+/* Teacher Courses Page */
+.teacher-courses {
+  @apply w-full h-full;
+}
+
+.teacher-courses__header {
+  @apply bg-primary-700 hover:bg-primary-600;
+}
+
+.teacher-courses__grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 mt-6 w-full;
+}
+
 /* Accordion Sections */
 .accordion-section {
   @apply border-x border-b border-gray-600 overflow-hidden first:border-t first:rounded-t-lg last:rounded-b-lg;
@@ -567,7 +580,7 @@ input[type="color"] {
 .accordion-section__chapter {
   @apply flex items-center text-gray-400/90 py-1;
 }
-
+ 
 /* Course Card Search */
 .course-card-search {
   @apply bg-customgreys-secondarybg overflow-hidden rounded-lg hover:bg-white-100/10 transition duration-200 flex flex-col cursor-pointer border-2 h-full;
@@ -587,6 +600,19 @@ input[type="color"] {
 
 .course-card-search__image {
   @apply object-cover transition-transform;
+}
+
+/* Course Card Teacher */
+.course-card-teacher {
+  @apply w-full h-[400px] p-0 bg-background border-none text-foreground bg-customgreys-primarybg overflow-hidden hover:bg-white-100/10 transition duration-200 flex flex-col;
+}
+
+.course-card-teacher__header {
+  @apply p-0 h-[400px] overflow-hidden;
+}
+
+.course-card-teacher__image {
+  @apply rounded-t-lg w-[100%] h-[100%] object-cover transition-transform;
 }
 
 /* Course Preview */
@@ -667,6 +693,23 @@ input[type="color"] {
 
 .navbar__sidebar-trigger {
   @apply text-customgreys-dirtyGrey hover:text-white-50 transition-colors;
+}
+
+/* Toolbar */
+.toolbar {
+  @apply flex items-center justify-between gap-4 w-full mb-4;
+}
+
+.toolbar__search {
+  @apply w-full px-5 h-12 bg-customgreys-primarybg placeholder-customgreys-dirtyGrey text-customgreys-dirtyGrey border-none rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring;
+}
+
+.toolbar__select {
+  @apply h-12 w-[180px] bg-customgreys-primarybg text-customgreys-dirtyGrey border-none;
+}
+
+.toolbar__select-item {
+  @apply cursor-pointer hover:!bg-gray-100 hover:!text-customgreys-darkGrey;
 }
 
 /* Wizard Stepper */
@@ -812,6 +855,27 @@ input[type="color"] {
   @apply text-sm text-gray-500 mt-1;
 }
 
+/* Course Card Teacher Additional Classes */
+.course-card-teacher__content {
+  @apply w-full pb-6 pt-4 flex-grow flex flex-col justify-between text-gray-400;
+}
+
+.course-card-teacher__title {
+  @apply text-primary-50 text-md md:text-lg line-clamp-2 overflow-hidden;
+}
+
+.course-card-teacher__category {
+  @apply bg-customgreys-dirtyGrey/50 px-2 py-1 mt-3 mb-3 rounded-xl w-fit text-sm;
+}
+
+.course-card-teacher__edit-button {
+  @apply rounded w-full bg-primary-700 border-none hover:bg-primary-600 hover:text-customgreys-primarybg text-white-100 cursor-pointer;
+}
+
+.course-card-teacher__delete-button {
+  @apply rounded w-full bg-red-600 text-white-100 hover:bg-red-400 hover:text-customgreys-primarybg cursor-pointer;
+}
+
 /* NonDashboard Navbar Additional Classes */
 .navbar__brand {
   @apply font-bold text-lg sm:text-xl hover:text-customgreys-dirtyGrey;
@@ -950,6 +1014,11 @@ input[type="color"] {
 
 /* Add this class for group hover effect */
 .group .course-card-search__image {
+  @apply hover:scale-105 w-auto;
+}
+
+/* Add this class for group hover effect */
+.group .course-card-teacher__image {
   @apply hover:scale-105 w-auto;
 }
 
