@@ -547,6 +547,133 @@ input[type="color"] {
   @apply px-8 py-4;
 }
 
+/* Droppable Component */
+.droppable-section {
+  @apply mb-4 p-2 rounded;
+}
+
+.droppable-section--even {
+  @apply bg-customgreys-dirtyGrey/30;
+}
+
+.droppable-section--odd {
+  @apply bg-customgreys-secondarybg;
+}
+
+.droppable-section__header {
+  @apply flex justify-between items-center mb-2 bg-black/30 p-1 rounded;
+}
+
+.droppable-section__title-wrapper {
+  @apply w-full flex flex-col gap-1;
+}
+
+.droppable-section__title-container {
+  @apply w-full flex items-center justify-between;
+}
+
+.droppable-section__title {
+  @apply flex items-center;
+}
+
+.droppable-section__description {
+  @apply text-sm text-customgreys-dirtyGrey ml-6;
+}
+
+.droppable-chapter {
+  @apply flex justify-between items-center ml-4 mb-1 rounded px-1;
+}
+
+.droppable-chapter--even {
+  @apply bg-black/40;
+}
+
+.droppable-chapter--odd {
+  @apply bg-black/20;
+}
+
+.droppable-chapter__title {
+  @apply flex items-center;
+}
+
+.droppable-chapter__actions {
+  @apply flex items-center gap-[1px];
+}
+
+.droppable-chapter__button {
+  @apply p-1;
+}
+
+/* Chapter Modal */
+.chapter-modal {
+  @apply flex flex-col;
+}
+
+.chapter-modal__header {
+  @apply flex justify-between items-center mb-4;
+}
+
+.chapter-modal__title {
+  @apply text-2xl font-bold;
+}
+
+.chapter-modal__close {
+  @apply text-gray-500 hover:text-gray-700;
+}
+
+.chapter-modal__form {
+  @apply space-y-4;
+}
+
+.chapter-modal__video {
+  @apply space-y-2;
+}
+
+.chapter-modal__video-label {
+  @apply text-sm font-medium;
+}
+
+.chapter-modal__preview {
+  @apply flex flex-col items-center space-x-2;
+}
+
+.chapter-modal__toggle {
+  @apply flex items-center space-x-2;
+}
+
+.chapter-modal__toggle-label {
+  @apply text-sm font-medium;
+}
+
+.chapter-modal__actions {
+  @apply flex justify-end space-x-2 mt-6;
+}
+
+/* Section Modal */
+.section-modal {
+  @apply flex flex-col;
+}
+
+.section-modal__header {
+  @apply flex justify-between items-center mb-4;
+}
+
+.section-modal__title {
+  @apply text-2xl font-bold;
+}
+
+.section-modal__close {
+  @apply text-gray-500 hover:text-gray-700;
+}
+
+.section-modal__form {
+  @apply space-y-4;
+}
+
+.section-modal__actions {
+  @apply flex justify-end space-x-2 mt-6;
+}
+
 /* Teacher Courses Page */
 .teacher-courses {
   @apply w-full h-full;
@@ -580,7 +707,7 @@ input[type="color"] {
 .accordion-section__chapter {
   @apply flex items-center text-gray-400/90 py-1;
 }
- 
+
 /* Course Card Search */
 .course-card-search {
   @apply bg-customgreys-secondarybg overflow-hidden rounded-lg hover:bg-white-100/10 transition duration-200 flex flex-col cursor-pointer border-2 h-full;
@@ -630,6 +757,19 @@ input[type="color"] {
 
 .course-preview__title {
   @apply text-white-50 text-3xl font-bold mb-2;
+}
+
+/* Custom Modal */
+.custom-modal__overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 z-40;
+}
+
+.custom-modal__content {
+  @apply fixed inset-y-0 right-0 w-full max-w-md bg-customgreys-secondarybg shadow-lg z-50 overflow-y-auto;
+}
+
+.custom-modal__inner {
+  @apply p-6;
 }
 
 /* Footer */
@@ -936,6 +1076,19 @@ input[type="color"] {
   @apply text-customgreys-dirtyGrey hover:text-white-50 transition-colors;
 }
 
+/* Add Chapter Button */
+.add-chapter-button {
+  @apply border-none text-primary-700;
+}
+
+.add-chapter-button__icon {
+  @apply mr-1 h-4 w-4 text-primary-700;
+}
+
+.add-chapter-button__text {
+  @apply text-primary-700;
+}
+
 /* AppSidebar */
 .app-sidebar__menu {
   @apply mt-5 group-data-[collapsible=icon]:mt-7;
@@ -1029,6 +1182,12 @@ input[type="color"] {
 
 .group:hover .navbar__search-input {
   @apply bg-customgreys-darkerGrey text-white-50;
+}
+
+/* Add these classes for group hover effects */
+.group:hover .add-chapter-button__icon,
+.group:hover .add-chapter-button__text {
+  @apply text-white-100;
 }
 
 /* Add this class for group hover effect */
