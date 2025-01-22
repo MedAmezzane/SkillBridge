@@ -21,7 +21,7 @@ const TeacherCourseCard = ({
     <Card className="course-card-teacher group">
       <CardHeader className="course-card-teacher__header">
         <Image
-          src={course.image || "/placeholder.png"}
+          src={course.image || "/placeholder.jpg"}
           alt={course.title}
           width={370}
           height={150}

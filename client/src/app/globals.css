@@ -1529,3 +1529,8 @@ input[type="color"] {
 .dashboard-navbar__sidebar-trigger {
   @apply text-customgreys-dirtyGrey hover:text-white-50 transition-colors;
 }
+
+/* SingIn SignUp Footer Hiding*/
+.cl-internal-1dauvpw {
+  display: none !important;
+}
