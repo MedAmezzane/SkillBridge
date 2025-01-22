@@ -187,40 +187,6 @@ input[type="color"] {
   @apply text-primary-500 font-semibold text-2xl;
 }
 
-/* Checkout Pages */
-.checkout {
-  @apply w-full px-4 h-full flex flex-col items-center py-12;
-}
-
-.checkout__content {
-  @apply w-full max-w-screen-lg flex flex-col items-center mt-10;
-}
-
-/* Completion Page */
-.completion {
-  @apply flex flex-col h-full items-center justify-center bg-background text-foreground;
-}
-
-.completion__content {
-  @apply text-center;
-}
-
-.completion__icon {
-  @apply mb-4 rounded-full bg-green-500 p-3 inline-flex items-center justify-center;
-}
-
-.completion__title {
-  @apply text-4xl font-bold mb-3;
-}
-
-.completion__message {
-  @apply mb-1;
-}
-
-.completion__action {
-  @apply mt-2 flex justify-center bg-secondary-700 rounded-lg px-4 py-2 hover:bg-secondary-600 cursor-pointer;
-}
-
 /* Landing Page */
 .landing {
   @apply w-3/4;
@@ -347,185 +313,6 @@ input[type="color"] {
   @apply h-[300px] rounded-lg;
 }
 
-/* Checkout Details Page */
-.checkout-details {
-  @apply w-full h-fit gap-10;
-}
-
-.checkout-details__container {
-  @apply sm:flex gap-10;
-}
-
-.checkout-details__preview {
-  @apply basis-1/2 rounded-lg;
-}
-
-.checkout-details__options {
-  @apply basis-1/2 flex-1 h-auto flex flex-col gap-10;
-}
-
-.checkout-details__guest {
-  @apply w-full bg-customgreys-secondarybg py-12 px-24 rounded-lg;
-}
-
-.checkout-details__title {
-  @apply text-3xl font-bold text-center mb-2;
-}
-
-.checkout-details__subtitle {
-  @apply mb-6 text-sm text-center text-gray-400 mx-auto;
-}
-
-.checkout-details__form {
-  @apply space-y-8;
-}
-
-.checkout-details__submit {
-  @apply w-full my-6 py-3 bg-primary-700 hover:bg-primary-600 text-white-100 rounded shadow text-sm font-semibold;
-}
-
-.checkout-details__divider {
-  @apply flex items-center justify-between;
-}
-
-.checkout-details__divider-line {
-  @apply w-full border-customgreys-dirtyGrey;
-}
-
-.checkout-details__divider-text {
-  @apply px-4 text-sm text-gray-400 whitespace-nowrap;
-}
-
-.checkout-details__auth {
-  @apply w-full bg-customgreys-secondarybg flex justify-center items-center rounded-lg;
-}
-
-/* Payment Page */
-.payment {
-  @apply flex flex-col w-full;
-}
-
-.payment__container {
-  @apply sm:flex gap-10 mb-6;
-}
-
-.payment__preview {
-  @apply basis-1/2 rounded-lg;
-}
-
-.payment__form-container {
-  @apply basis-1/2;
-}
-
-.payment__form {
-  @apply space-y-4;
-}
-
-.payment__content {
-  @apply flex flex-col gap-4 bg-customgreys-secondarybg px-10 py-10 rounded-lg;
-}
-
-.payment__title {
-  @apply text-2xl font-bold;
-}
-
-.payment__subtitle {
-  @apply text-sm text-gray-400;
-}
-
-.payment__method {
-  @apply flex flex-col gap-2 w-full mt-6;
-}
-
-.payment__method-title {
-  @apply text-md;
-}
-
-.payment__card-container {
-  @apply flex flex-col border-[2px] border-white-100/5 rounded-lg;
-}
-
-.payment__card-header {
-  @apply flex items-center gap-2 bg-white-50/5 py-2 px-2;
-}
-
-.payment__card-element {
-  @apply px-4 py-6;
-}
-
-.payment__actions {
-  @apply flex justify-between items-center w-full mt-6;
-}
-
-.payment__submit {
-  @apply hover:bg-primary-600 bg-primary-700;
-}
-
-/* Billing Page */
-.billing {
-  @apply space-y-8;
-}
-
-.billing__container {
-  @apply space-y-6 bg-customgreys-secondarybg;
-}
-
-.billing__title {
-  @apply text-2xl font-semibold;
-}
-
-.billing__filters {
-  @apply flex space-x-4;
-}
-
-.billing__select {
-  @apply w-[180px] border-none bg-customgreys-primarybg;
-}
-
-.billing__select-content {
-  @apply bg-customgreys-primarybg;
-}
-
-.billing__select-item {
-  @apply hover:!bg-white-50 hover:!text-customgreys-primarybg cursor-pointer;
-}
-
-.billing__grid {
-  @apply h-[400px] w-full;
-}
-
-.billing__amount {
-  @apply font-medium;
-}
-
-.billing__table {
-  @apply text-customgreys-dirtyGrey min-h-[200px];
-}
-
-.billing__table-header {
-  @apply bg-customgreys-darkGrey;
-}
-
-.billing__table-header-row {
-  @apply border-none text-white-50;
-}
-
-.billing__table-cell {
-  @apply border-none p-4;
-}
-
-.billing__table-row {
-  @apply border-none;
-}
-
-.billing__table-row:hover {
-  @apply bg-customgreys-primarybg;
-}
-
-.billing__table-body {
-  @apply bg-customgreys-primarybg min-h-[200px];
-}
-
 /* Dashboard Layout */
 .dashboard {
   @apply min-h-screen w-full bg-customgreys-primarybg flex;
@@ -589,23 +376,6 @@ input[type="color"] {
   @apply object-cover transition-transform;
 }
 
-/* Course Preview */
-.course-preview {
-  @apply space-y-10;
-}
-
-.course-preview__container {
-  @apply w-full bg-customgreys-secondarybg py-8 px-10 flex flex-col gap-5 rounded-lg;
-}
-
-.course-preview__image-wrapper {
-  @apply mb-2 bg-white-50;
-}
-
-.course-preview__title {
-  @apply text-white-50 text-3xl font-bold mb-2;
-}
-
 /* Footer */
 .footer {
   @apply bg-customgreys-secondarybg bottom-0 w-full py-8 mt-10 text-center text-sm;
@@ -667,59 +437,6 @@ input[type="color"] {
 
 .navbar__sidebar-trigger {
   @apply text-customgreys-dirtyGrey hover:text-white-50 transition-colors;
-}
-
-/* Wizard Stepper */
-.wizard-stepper {
-  @apply w-1/2 mb-4 flex flex-col items-center;
-}
-
-.wizard-stepper__container {
-  @apply w-full flex items-center justify-between mb-2;
-}
-
-.wizard-stepper__step {
-  @apply flex flex-col items-center;
-}
-
-.wizard-stepper__circle {
-  @apply w-8 h-8 flex items-center justify-center rounded-full mb-2;
-}
-
-.wizard-stepper__circle--completed {
-  @apply bg-green-500;
-}
-
-.wizard-stepper__circle--current {
-  @apply bg-primary-700;
-}
-
-.wizard-stepper__circle--upcoming {
-  @apply border border-customgreys-dirtyGrey text-customgreys-dirtyGrey;
-}
-
-.wizard-stepper__text {
-  @apply text-sm;
-}
-
-.wizard-stepper__text--active {
-  @apply text-white-100;
-}
-
-.wizard-stepper__text--inactive {
-  @apply text-customgreys-dirtyGrey;
-}
-
-.wizard-stepper__line {
-  @apply w-1/4 h-[1px] self-start mt-4;
-}
-
-.wizard-stepper__line--completed {
-  @apply bg-green-500;
-}
-
-.wizard-stepper__line--incomplete {
-  @apply bg-customgreys-dirtyGrey;
 }
 
 /* NonDashboard Navbar */
@@ -946,11 +663,6 @@ input[type="color"] {
 /* Root Layout */
 .root-layout {
   @apply mx-auto w-full h-full justify-center items-center;
-}
-
-/* Add this class for group hover effect */
-.group .course-card-search__image {
-  @apply hover:scale-105 w-auto;
 }
 
 /* Add these classes for group hover effects */
