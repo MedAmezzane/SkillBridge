@@ -2,11 +2,11 @@
   {
     "courseId": "3a9f3d6c-c391-4b1c-9c3d-6c3f3d6c3f3d",
     "teacherId": "user_7kFh92JkCpQw3N8M5L4xRzVtYs",
-    "teacherName": "John Doe",
+    "teacherName": "Med AMEZZANE",
     "title": "Introduction to Programming",
     "description": "Learn the basics of programming with this comprehensive course.",
     "category": "Computer Science",
-    "image": "https://images.pexels.com/photos/5905888/pexels-photo-5905888.jpeg",
+    "image": "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg",
     "price": 4999,
     "level": "Beginner",
     "status": "Published",
@@ -31,7 +31,7 @@
                 "commentId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
                 "userId": "emma.wilson@hotmail.com",
                 "text": "Great introduction!",
-                "timestamp": "2023-03-10T09:15:00Z"
+                "timestamp": "2024-11-10T09:15:00Z"
               }
             ]
           },
@@ -114,11 +114,11 @@
   {
     "courseId": "8b4f7d9c-4b1c-4b1c-8b4f-7d9c8b4f7d9c",
     "teacherId": "user_4mNj68RtPvXw2Ky9Qc7HbSdAf",
-    "teacherName": "Alice Johnson",
+    "teacherName": "Abdel OUARRAR",
     "title": "Advanced Machine Learning",
     "description": "Dive deep into machine learning algorithms and techniques.",
     "category": "Artificial Intelligence",
-    "image": "https://images.pexels.com/photos/6303596/pexels-photo-6303596.jpeg",
+    "image": "https://images.pexels.com/photos/8438951/pexels-photo-8438951.jpeg",
     "price": 9999,
     "level": "Advanced",
     "status": "Published",
@@ -228,11 +228,11 @@
   {
     "courseId": "c5d6e7f8-g9h0-i1j2-k3l4-m5n6o7p8q9r0",
     "teacherId": "user_7kFh92JkCpQw3N8M5L4xRzVtYs",
-    "teacherName": "John Doe",
+    "teacherName": "Med AMEZZANE",
     "title": "Web Development Fundamentals",
     "description": "Learn the basics of HTML, CSS, and JavaScript to build modern websites.",
     "category": "Web Development",
-    "image": "https://images.pexels.com/photos/6001397/pexels-photo-6001397.jpeg",
+    "image": "https://images.pexels.com/photos/16129724/pexels-photo-16129724.jpeg",
     "price": 7999,
     "level": "Beginner",
     "status": "Published",
@@ -304,11 +304,11 @@
   {
     "courseId": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9",
     "teacherId": "user_3rTg67LmZnXc4Vb8Wd0JyUhEq",
-    "teacherName": "Michael Brown",
+    "teacherName": "Abdel OUARRAR",
     "title": "Data Science Fundamentals",
     "description": "Learn the basics of data science, including statistics, data visualization, and machine learning.",
     "category": "Data Science",
-    "image": "https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg",
+    "image": "https://images.pexels.com/photos/5527516/pexels-photo-5527516.jpeg",
     "price": 8999,
     "level": "Intermediate",
     "status": "Published",
@@ -344,7 +344,7 @@
   {
     "courseId": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
     "teacherId": "user_7kFh92JkCpQw3N8M5L4xRzVtYs",
-    "teacherName": "John Doe",
+    "teacherName": "Med AMEZZANE",
     "title": "Mobile App Development with React Native",
     "description": "Build cross-platform mobile apps using React Native and JavaScript.",
     "category": "Mobile Development",
